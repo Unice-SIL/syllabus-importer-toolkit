@@ -1,0 +1,18 @@
+{
+  "name": "unicesil/syllabus-importer-toolkit",
+  "description": "Toolkit to develop syllabus importer to import data in Syllabus from external repository",
+  "author": [
+    {
+      "name": "Frédéric Casazza",
+      "email": "frederic.casazza@univ-cotedazur.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "UniceSIL\\SyllabusImporterToolkit": ""
+    }
+  },
+  "require": {
+    "php": ">= 5.4"
+  }
+}
