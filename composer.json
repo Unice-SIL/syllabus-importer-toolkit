@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "UniceSIL\\SyllabusImporterToolkit": ""
+      "UniceSIL\\SyllabusImporterToolkit\\": ""
     }
   },
   "require": {
