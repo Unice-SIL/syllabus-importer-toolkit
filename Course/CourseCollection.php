@@ -13,12 +13,11 @@ class CourseCollection extends AbstractCollection
 
     /**
      * CourseCollection constructor.
-     * @param string $objectType
      * @param array $input
      * @param int $flags
      * @param string $iterator_class
      */
-    public function __construct($objectType, array $input = array(), $flags = 0, $iterator_class = "ArrayIterator")
+    public function __construct(array $input = array(), $flags = 0, $iterator_class = "ArrayIterator")
     {
         parent::__construct(CourseInterface::class, $input, $flags, $iterator_class);
     }
