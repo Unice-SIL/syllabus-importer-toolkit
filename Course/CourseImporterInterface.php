@@ -8,6 +8,16 @@ namespace UniceSIL\SyllabusImporterToolkit\Course;
  */
 interface CourseImporterInterface
 {
+    /**
+     * Set an array of years could be used to get courses information for specifics years
+     * @param array $years
+     * @return mixed
+     */
+    public function setYears(array $years = []);
 
-    public function execute(array $years = []): CourseCollection;
+    /**
+     * Method called to launch courses import
+     * @return CourseCollection
+     */
+    public function execute(): CourseCollection;
 }
