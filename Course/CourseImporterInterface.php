@@ -9,5 +9,5 @@ namespace UniceSIL\SyllabusImporterToolkit\Course;
 interface CourseImporterInterface
 {
 
-    public function execute(): CourseCollection;
+    public function execute(array $years = []): CourseCollection;
 }
