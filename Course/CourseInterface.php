@@ -44,32 +44,36 @@ interface CourseInterface
     public function getTitle(): string;
 
     /**
-     * Get course ECTS
-     * @return mixed
+     * @return int|null
      */
     public function getEcts(): ?int;
 
     /**
-     * @return string
+     * Get course ECTS
+     * @return null|string
      */
     public function getDomain(): ?string;
 
     /**
-     * @return string
+     * Get course period
+     * @return null|string
      */
     public function getPeriod(): ?string;
 
     /**
-     * @return float
+     * get course cm hours in class
+     * @return float|null
      */
     public function getTeachingCmClass(): ?float;
 
     /**
+     * Get course td hours in class
      * @return float
      */
     public function getTeachingTdClass(): ?float;
 
     /**
+     * et course tp hours in class
      * @return float
      */
     public function getTeachingTpClass(): ?float;
