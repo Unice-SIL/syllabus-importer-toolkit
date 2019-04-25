@@ -10,10 +10,10 @@ interface CourseImporterInterface
 {
     /**
      * Set an year could be used to get courses information
-     * @param string $year
+     * @param mixed $year
      * @return mixed
      */
-    public function setYear(string $year);
+    public function setYear($year);
 
     /**
      * Method called to launch courses import

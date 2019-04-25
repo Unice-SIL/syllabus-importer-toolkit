@@ -27,9 +27,9 @@ interface CourseInterface
     public function getParents(): CourseCollection;
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getYearId(): string;
+    public function getYearId(): ?string;
 
     /**
      * Get Structure id
