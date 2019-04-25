@@ -52,27 +52,27 @@ interface CourseInterface
     /**
      * @return string
      */
-    public function getDomain(): string;
+    public function getDomain(): ?string;
 
     /**
      * @return string
      */
-    public function getPeriod(): string;
+    public function getPeriod(): ?string;
 
     /**
      * @return float
      */
-    public function getTeachingCmClass(): float;
+    public function getTeachingCmClass(): ?float;
 
     /**
      * @return float
      */
-    public function getTeachingTdClass(): float;
+    public function getTeachingTdClass(): ?float;
 
     /**
      * @return float
      */
-    public function getTeachingTpClass(): float;
+    public function getTeachingTpClass(): ?float;
 
     /**
      * If return true, create the course if does not already exist in Syllabus database
