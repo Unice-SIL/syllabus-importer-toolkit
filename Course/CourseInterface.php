@@ -68,13 +68,13 @@ interface CourseInterface
 
     /**
      * Get course td hours in class
-     * @return float
+     * @return null|float
      */
     public function getTeachingTdClass(): ?float;
 
     /**
      * et course tp hours in class
-     * @return float
+     * @return null|float
      */
     public function getTeachingTpClass(): ?float;
 
