@@ -12,7 +12,7 @@ interface CourseInfoInterface
     /**
      * @return null|string
      */
-    public function getYearId(): ?string;
+    public function getYearId(): string;
 
     /**
      * Get Structure id
