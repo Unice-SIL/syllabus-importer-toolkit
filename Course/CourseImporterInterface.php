@@ -13,7 +13,7 @@ interface CourseImporterInterface
      * @param mixed $year
      * @return mixed
      */
-    public function setYear($year);
+    public function setYears(array $year);
 
     /**
      * Method called to launch courses import
