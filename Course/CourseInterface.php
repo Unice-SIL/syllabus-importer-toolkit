@@ -9,7 +9,7 @@ namespace UniceSIL\SyllabusImporterToolkit\Course;
 interface CourseInterface
 {
     /**
-     * Get course id / code in source repository
+     * Get course establishment id from source repository
      * @return string
      */
     public function getEtbId(): string;
@@ -36,6 +36,6 @@ interface CourseInterface
      * If return true, create the course if does not already exist in Syllabus database
      * @return bool
      */
-    public function createCourseIfNotExist(): bool;
+    public function createIfNotExist(): bool;
 
 }
