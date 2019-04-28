@@ -2,6 +2,8 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\Course;
 
+use UniceSIL\SyllabusImporterToolkit\Structure\StructureInterface;
+
 /**
  * Interface CourseInfoInterface
  * @package UniceSIL\SyllabusImporterToolkit\Course
@@ -15,10 +17,10 @@ interface CourseInfoInterface
     public function getYearId(): string;
 
     /**
-     * Get Structure id
-     * @return string
+     * Get Structure
+     * @return StructureInterface
      */
-    public function getStructureId(): string;
+    public function getStructure(): StructureInterface;
 
     /**
      * Get course title
