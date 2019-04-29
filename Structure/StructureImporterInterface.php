@@ -2,15 +2,17 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\Structure;
 
-use UniceSIL\SyllabusImporterToolkit\Course\ImporterInterface;
-
-
 /**
  * Interface StructureImporterInterface
  * @package UniceSIL\SyllabusImporterToolkit\Structure
  */
-interface StructureImporterInterface extends ImporterInterface
+interface StructureImporterInterface
 {
+    /**
+     * @param array $args
+     * @return mixed
+     */
+    public function setArgs(array $args=[]);
 
     /**
      * @return StructureCollection

@@ -3,14 +3,13 @@
 namespace UniceSIL\SyllabusImporterToolkit\Permission;
 
 use UniceSIL\SyllabusImporterToolkit\Course\CourseInfoInterface;
-use UniceSIL\SyllabusImporterToolkit\Course\ImporterInterface;
 
 
 /**
  * Interface PermissionImporterInterface
  * @package UniceSIL\SyllabusImporterToolkit\Structure
  */
-interface PermissionImporterInterface extends ImporterInterface
+interface PermissionImporterInterface
 {
 
     /**
