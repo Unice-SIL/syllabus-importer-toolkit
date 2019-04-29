@@ -6,14 +6,9 @@ namespace UniceSIL\SyllabusImporterToolkit\Course;
  * Interface CourseImporterInterface
  * @package UniceSIL\SyllabusImporterToolkit\Course
  */
-interface CourseImporterInterface
+interface CourseImporterInterface extends ImporterInterface
 {
 
-    /**
-     * @param array $args
-     * @return mixed
-     */
-    public function setArgs(array $args=[]);
 
     /**
      * Set years could be used to get courses information

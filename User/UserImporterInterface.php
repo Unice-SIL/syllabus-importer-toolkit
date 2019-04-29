@@ -2,18 +2,15 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\User;
 
+use UniceSIL\SyllabusImporterToolkit\Course\ImporterInterface;
+
 
 /**
  * Interface UserImporterInterface
  * @package UniceSIL\SyllabusImporterToolkit\User
  */
-interface UserImporterInterface
+interface UserImporterInterface extends ImporterInterface
 {
-    /**
-     * @param array $args
-     * @return mixed
-     */
-    public function setArgs(array $args=[]);
 
     /**
      * @return UserCollection
