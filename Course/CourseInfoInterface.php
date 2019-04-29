@@ -29,9 +29,9 @@ interface CourseInfoInterface
     public function getTitle(): string;
 
     /**
-     * @return int|null
+     * @return float|null
      */
-    public function getEcts(): ?int;
+    public function getEcts(): ?float;
 
     /**
      * Get course ECTS
