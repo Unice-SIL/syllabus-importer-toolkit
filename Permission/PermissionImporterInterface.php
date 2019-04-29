@@ -2,6 +2,8 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\Permission;
 
+use UniceSIL\SyllabusImporterToolkit\Course\CourseInfoInterface;
+
 
 /**
  * Interface PermissionImporterInterface
@@ -15,6 +17,12 @@ interface PermissionImporterInterface
      * @return mixed
      */
     public function setArgs(array $args=[]);
+
+    /**
+     * @param CourseInfoInterface $courseInfo
+     * @return mixed
+     */
+    public function setCourseInfo(CourseInfoInterface $courseInfo);
 
     /**
      * @return PermissionCollection
