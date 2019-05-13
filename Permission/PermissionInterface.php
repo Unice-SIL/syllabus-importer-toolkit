@@ -3,7 +3,6 @@
 namespace UniceSIL\SyllabusImporterToolkit\Permission;
 
 use UniceSIL\SyllabusImporterToolkit\Course\CourseInfoInterface;
-use UniceSIL\SyllabusImporterToolkit\Course\CourseInterface;
 use UniceSIL\SyllabusImporterToolkit\User\UserInterface;
 
 /**
@@ -16,7 +15,7 @@ interface PermissionInterface
      * Get course info
      * @return CourseInfoInterface
      */
-    public function getCourse(): CourseInterface;
+    public function getCourseInfo(): CourseInfoInterface;
 
     /**
      * Get permission
