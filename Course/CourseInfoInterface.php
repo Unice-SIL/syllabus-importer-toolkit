@@ -2,6 +2,7 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\Course;
 
+use UniceSIL\SyllabusImporterToolkit\Permission\PermissionCollection;
 use UniceSIL\SyllabusImporterToolkit\Structure\StructureInterface;
 
 /**
@@ -62,5 +63,10 @@ interface CourseInfoInterface
      * @return null|float
      */
     public function getTeachingTpClass(): ?float;
+
+    /**
+     * @return PermissionCollection
+     */
+    public function getCoursePermission(): PermissionCollection;
 
 }

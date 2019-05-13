@@ -2,7 +2,7 @@
 
 namespace UniceSIL\SyllabusImporterToolkit\Permission;
 
-use UniceSIL\SyllabusImporterToolkit\Course\CourseInfoInterface;
+use UniceSIL\SyllabusImporterToolkit\Course\CourseCollection;
 
 
 /**
@@ -19,13 +19,14 @@ interface PermissionImporterInterface
     public function setArgs(array $args=[]);
 
     /**
-     * @param CourseInfoInterface $courseInfo
+     * Set years could be used to get courses permission
+     * @param array $years
      * @return mixed
      */
-    public function setCourseInfo(CourseInfoInterface $courseInfo);
+    public function setYears(array $years): PermissionImporterInterface;
 
     /**
-     * @return PermissionCollection
+     * @return CourseCollection
      */
-    public function execute(): PermissionCollection;
+    public function execute(): CourseCollection;
 }

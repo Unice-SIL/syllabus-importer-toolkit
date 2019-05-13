@@ -18,7 +18,7 @@ interface StructureInterface
      * Get structure label
      * @return string
      */
-    public function getLabel(): string;
+    public function getUser(): string;
 
     /**
      * If return true, create the structure if does not already exist in Syllabus database
